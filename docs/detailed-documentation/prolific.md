@@ -8,7 +8,9 @@ has_children: false
 
 # Using Prolific
 
-This page is a step-by-step guide to setting up an experiment on [Prolific](https://www.prolific.co/) using NivTurk. It assumes that you already have working jsPsych code in your `/app/templates/experiment.html` file, have tested your code, and are able to serve your experiment via the web.
+This page is a step-by-step guide to setting up an experiment on [Prolific](https://www.prolific.co/) using NivTurk.
+
+It assumes that you already have working jsPsych code in your `/app/templates/experiment.html` file, have tested your code, and are able to serve your experiment via the web.
 
 ## Setting up a Prolific study
 
