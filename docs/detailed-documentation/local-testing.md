@@ -1,8 +1,9 @@
 ---
 layout: default
-title: Debug mode
+title: Local testing
 parent: Detailed documentation
-nav_order: 7
+nav_order: 5
+has_children: false
 ---
 
 # Debug mode

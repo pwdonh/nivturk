@@ -1,7 +1,7 @@
 ---
 layout: default
 title: Error codes
-nav_order: 7
+nav_order: 9
 parent: Detailed documentation
 has_children: false
 ---
