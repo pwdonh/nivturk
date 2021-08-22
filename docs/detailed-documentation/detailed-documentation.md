@@ -6,4 +6,4 @@ has_children: true
 permalink: /docs/detailed-documentation
 ---
 
-# Overview
+# Detailed Documentation

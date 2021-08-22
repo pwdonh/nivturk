@@ -1,7 +1,7 @@
 ---
 layout: default
-title: Using TurkPrime
-nav_order: 6
+title: Using MTurk
+nav_order: 5
 parent: Detailed documentation
 has_children: false
 ---
@@ -13,7 +13,7 @@ This page provides information on getting an experiment set up on TurkPrime usin
 This assumes that you already have working experiment code in your `experiment.html` file, and that you have tested it locally (as well as testing its data-saving on a server).
 
 ## Initialising the TurkPrime study
-From the Dashboard, under 'Create a Study', click 'Mturk Toolkit'. This will create a new study. You should follow the steps there to fill in information about your study. 
+From the Dashboard, under 'Create a Study', click 'Mturk Toolkit'. This will create a new study. You should follow the steps there to fill in information about your study.
 
 Below are the sections that have contents related to NivTurk.
 

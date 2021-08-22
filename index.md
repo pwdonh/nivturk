@@ -11,6 +11,15 @@ last_modified_date: 2021-08-22
 
 NivTurk is a lightweight software solution for running online behavioral experiments. It is designed to be plug-and-play, requiring only a python environment, a jsPsych experiment, and a server configured for hosting websites.
 
+## Quickstart
+
+```bash
+git clone https://github.com/nivlab/nivturk.git
+cd nivturk
+pip install -r requirements.txt
+gunicorn -b 0.0.0.0:9000 -w 4 app:app
+```
+
 ## Site Layout
 
 This site has five sections. New users should start with the [getting started](/nivturk/docs/detailed-documentation/getting-started) page of the detailed documentation.

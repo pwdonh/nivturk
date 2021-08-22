@@ -1,8 +1,9 @@
 ---
 layout: default
 title: Download
-parent: Detailed documentation
-nav_order: 1
+nav_order: 2
+has_children: false
+permalink: /docs/download
 ---
 
 # Downloading NivTurk
@@ -17,7 +18,7 @@ NivTurk is hosted at and available for download from its [Github repository](htt
 
 ### via Github
 
-You can download NivTurk directly from Github at any of the links above. Once you are on the page corresponding to the desired branch (e.g. MTurk, Prolific), click on the green Code button on the top-right of the page, and then select "Download Zip".
+You can download NivTurk directly from Github at any of the links above. Once you are on the page corresponding to the desired branch (e.g. MTurk, Prolific), click on the green 'Code' button on the top-right of the page, and then select 'Download Zip'.
 
 ### via Git clone
 
