@@ -2,7 +2,7 @@
 layout: default
 title: Getting started
 parent: Detailed documentation
-nav_order: 1
+nav_order: 2
 ---
 
 # Getting started

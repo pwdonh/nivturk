@@ -2,14 +2,24 @@
 layout: default
 title: Download
 parent: Detailed documentation
-nav_order: 3
+nav_order: 1
 ---
 
 # Downloading NivTurk
 
-NivTurk is hosted in a GitHub repository and can be downloaded [here](https://github.com/nivlab/nivturk/releases){:target="_blank"}. You should use the Prolific 1.0 release if you plan on recruiting via Prolific, or the MTurk v1.0 release if you plan on recruiting via TurkPrime.
+NivTurk is hosted at and available for download from its [Github repository](https://github.com/nivlab/nivturk){:target="_blank"}. There are multiple versions of NivTurk available, each with its own branch and intended for a particular participant pool:
 
-## Git clone
+- [mturk](https://github.com/nivlab/nivturk/tree/mturk){:target="_blank"}: for collecting data from Amazon Mechanical Turk.
+- [prolific](https://github.com/nivlab/nivturk/tree/prolific){:target="_blank"}: for collecting data from Prolific.
+- [standalone](https://github.com/nivlab/nivturk/tree/standalone){:target="_blank"}: for collecting data from the Princeton undergraduate student recruiting system (SONA) or from the Center for Computational Cognitive Neuropsychiatry.
+
+## How to download
+
+### via Github
+
+You can download NivTurk directly from Github at any of the links above. Once you are on the page corresponding to the desired branch (e.g. MTurk, Prolific), click on the green Code button on the top-right of the page, and then select "Download Zip".
+
+### via Git clone
 
 If you are comfortable working with Git at the command line, you can also clone the repo with the following commands
 
@@ -17,9 +27,15 @@ If you are comfortable working with Git at the command line, you can also clone 
 git clone https://github.com/nivlab/nivturk.git
 ```
 
-The Prolific branch is the default, so if you want to use the MTurk branch you will need to switch to it after you clone the repo:
+Please note, the Prolific branch will be downloaded by the default. So if you want to use the MTurk branch you will need to switch to it after you clone the repo:
 
 ```bash
 cd nivturk
 git checkout mturk
+```
+
+Alternately, you can download the branch of interest directly using the command:
+
+```bash
+git clone https://github.com/nivlab/nivturk.git --single-branch --branch <branch-name>
 ```

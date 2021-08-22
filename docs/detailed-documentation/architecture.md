@@ -2,7 +2,7 @@
 layout: default
 title: Code architecture
 parent: Detailed documentation
-nav_order: 2
+nav_order: 3
 ---
 
 # Code Architecture
