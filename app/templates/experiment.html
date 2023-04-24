@@ -1,14 +1,17 @@
 <!DOCTYPE html>
 <html>
 <head>
-  <title>Decision Making Experiment</title>
+  <title>Triplet experiment</title>
 
   <!-- Load libraries -->
   <script src="../static/lib/jquery-3.3.1/jquery.min.js"></script>
   <script src="../static/lib/jspsych-7.2.1/jspsych.js"></script>
 
   <!-- Load jsPsych plug-ins -->
-  <script src="../static/lib/jspsych-7.2.1/plugins/plugin-survey-likert.js"></script>
+  <script src="../static/js/jspsych-audio-tokens-v7.js"></script>
+  <script src="../static/js/audio-tokens.js"></script>  
+  <script src="//d3js.org/d3.v4.min.js"></script>
+  <script src="../static/stimuli/triplets_features_111.js"></script>  
 
   <!-- Load CSS styles -->
   <link href="../static/lib/jspsych-7.2.1/css/jspsych.css" rel="stylesheet" type="text/css"></link>
@@ -27,20 +30,24 @@
   };
   window.addEventListener("beforeunload", verify_unload);
 
-  // Define example survey.
-  var likert_page = {
-    type: jsPsychSurveyLikert,
-    questions: [{prompt: "Are you seeing something right now?", labels: ["Yes", "No"]}],
-    on_start: function(data) {
-      pass_message('message to pass to nivturk');
-    }
-  };
+  let timeline = []
+
+  for (let i = 0; i < triplets.length; i++) {
+      let triplet = []
+      for (let j = 0; j<3; j++) {
+          triplet.push('../static/stimuli/'+triplets[i][j])
+      }
+      timeline.push({
+          type: jsPsychAudioTokens,
+          ratingtype: 'triplets',
+          stimuli: triplet,
+          force_listen: false,
+          loop: false
+      })
+  }
 
   // Define global variables.
   var low_quality = false;
-
-  // Initialize timeline.
-  var timeline = [likert_page];
 
   // Initialize jsPsych.
   var jsPsych = initJsPsych({
